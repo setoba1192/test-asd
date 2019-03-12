@@ -33,6 +33,8 @@ public class Activo {
 
 	private String color;
 
+	private ActivoEstado estado;
+
 	public long getId() {
 		return id;
 	}
@@ -143,6 +145,22 @@ public class Activo {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+	public ActivoEstado getEstado() {
+		return estado;
+	}
+
+	public void setEstado(ActivoEstado estado) {
+		this.estado = estado;
+	}
+
+	@Override
+	public String toString() {
+		return "Activo [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", tipo=" + tipo
+				+ ", serial=" + serial + ", numeroInterno=" + numeroInterno + ", peso=" + peso + ", alto=" + alto
+				+ ", ancho=" + ancho + ", largo=" + largo + ", valorCompra=" + valorCompra + ", fechaCompra="
+				+ fechaCompra + ", fechaDeBaja=" + fechaDeBaja + ", color=" + color + ", estado=" + estado + "]";
 	}
 
 }

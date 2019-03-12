@@ -12,6 +12,12 @@ public class Area {
 
 	private String direccion;
 
+	@Override
+	public String toString() {
+		return "Area [id=" + id + ", nombre=" + nombre + ", ciudad=" + ciudad + ", telefono=" + telefono
+				+ ", direccion=" + direccion + "]";
+	}
+
 	public long getId() {
 		return id;
 	}

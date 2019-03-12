@@ -6,6 +6,17 @@ public class ActivoTipo {
 
 	private String nombre;
 
+	public ActivoTipo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public ActivoTipo(int id, String nombre) {
+
+		this.id = id;
+		this.nombre = nombre;
+
+	}
+
 	public int getId() {
 		return id;
 	}

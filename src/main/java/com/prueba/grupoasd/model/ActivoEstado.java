@@ -6,6 +6,16 @@ public class ActivoEstado {
 
 	private String nombre;
 
+	public ActivoEstado() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public ActivoEstado(int id, String nombre) {
+
+		this.id = id;
+		this.nombre = nombre;
+	}
+
 	public int getId() {
 		return id;
 	}
